@@ -1,6 +1,10 @@
 import mongoose,  { Schema } from "mongoose"
 import AuthRoles from "../utils/authRoles"
 
+import bcrypt from "bcryptjs"
+import JWT from "jsonwebtoken"
+import crypto from "crypto"
+
 const userSchema = Schema(
     {
     name: {
